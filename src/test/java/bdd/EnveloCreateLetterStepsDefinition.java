@@ -15,6 +15,7 @@ public class EnveloCreateLetterStepsDefinition {
 
     @Given("user is on main page and click on zaloguj się button and input {string} and {string}")
     public void userIsOnMainPageAndClickOnZalogujSięButtonAndInputAnd(String arg0, String arg1) {
+//        tu można zmienić na sterownik innej przeglądarki używając metod z klasy WebDriverFactory
         driver = WebDriverFactory.createChromedriverWithImplicitlyWait(10);
 
         driver.get("https://envelo.pl");
